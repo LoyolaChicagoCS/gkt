@@ -11,7 +11,7 @@
   George K. Thiruvathukal, PhD.
 
 
-  | George K. Thiruvathukal, PhD.
+  | c.v.
 
 </title>
 <meta name="description" content="George K. Thiruvathukal, PhD, Home Page
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/cv/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -101,7 +101,7 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
               
@@ -135,9 +135,11 @@
           
           
           
-          <li class="nav-item ">
+          <li class="nav-item active">
               <a class="nav-link" href="/cv/">
                 c.v.
+                
+                <span class="sr-only">(current)</span>
                 
               </a>
           </li>
@@ -209,56 +211,36 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>my blog(ish)</h1>
-    <h2>this section is under construction - come back soon...</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">c.v.</h1>
+    <p class="post-description">Download Latest CV via GitHub</p>
+  </header>
 
+  <article>
+    <h3 id="download">Download</h3>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-  </ul>
+<ul>
+  <li><a href="https://github.com/gkthiruvathukal/cv/releases/latest/download/gkthiruvathukal-cv.pdf">George K. Thiruvathukal’s CV <i class="fas fa-file-pdf"></i> [PDF]</a>.</li>
+</ul>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="George K. Thiruvathukal, PhD.">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="George K. Thiruvathukal, PhD. - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="George K. Thiruvathukal, PhD. - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<h3 id="technical-notes">Technical Notes</h3>
 
+<ul>
+  <li>The source code for my CV is maintained using GitHub at <a href="https://github.com/gkthiruvathukal/cv">github.com/gkthiruvathukal/cv</a> in \(\LaTeX\) format.</li>
+  <li>My CV is is written using the lovely <a href="https://github.com/xdanaux/moderncv">moderncv</a> class. <em>Ok, it’s not perfect, but I still like the idea of <code class="language-plaintext highlighter-rouge">moderncv</code> and hope it continues to evolve.</em></li>
+  <li>For now, I use the Travis-CI <em>continuous integration</em> system to build the CV on each commit. I’m planning to move to GitHub Actions, given some of the <em>bad</em> things that seem to be happening at Travis-CI.</li>
+  <li>I update the PDF only on <em>major</em> and <em>minor</em> releases using <code class="language-plaintext highlighter-rouge">git tag</code>. If you absolutely need the latest version (kind of unlikely) then you should pull my code and run <code class="language-plaintext highlighter-rouge">./build-cv.sh</code>.</li>
+</ul>
 
+<h3 id="cv-build-status">CV Build Status</h3>
+
+<p><a href="https://travis-ci.com/gkthiruvathukal/cv"><img src="https://travis-ci.com/gkthiruvathukal/cv.svg?branch=master" alt="Build Status" /></a></p>
+
+<h3 id="website-build-status">Website Build Status</h3>
+
+<p><img src="https://github.com/LoyolaChicagoCS/gkt/workflows/Deploy%20Website/badge.svg" alt="Deploy Website" /></p>
+
+  </article>
 
 </div>
 
